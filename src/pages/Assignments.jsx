@@ -13,7 +13,6 @@ const Assignments = () => {
     localStorage.setItem("assignments", JSON.stringify(assignments));
   }, [assignments]);
 
-  // Calculate remaining time string
   const getTimeLeft = (dueDate) => {
     if (!dueDate) return "No due date";
 

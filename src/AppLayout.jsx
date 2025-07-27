@@ -1,4 +1,4 @@
-// src/AppLayout.jsx
+
 import React, { useState, useEffect } from 'react';
 
 export default function AppLayout({ children }) {

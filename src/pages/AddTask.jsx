@@ -1,6 +1,5 @@
 import { getTasks, saveTasks } from "../data/tasks";
 
-// When submitting form:
 const handleSubmit = () => {
   const newTask = {
     id: Date.now(),
@@ -12,5 +11,5 @@ const handleSubmit = () => {
 
   const updatedTasks = [...getTasks(), newTask];
   saveTasks(updatedTasks);
-  // navigate or show success
+ 
 };

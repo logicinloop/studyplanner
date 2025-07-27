@@ -8,12 +8,10 @@ const RaindropProgress = ({ progress }) => {
       const drop = document.createElement('div');
       drop.className = 'raindrop';
       containerRef.current.appendChild(drop);
-
-      // Clean up drops after they fall
       setTimeout(() => {
         drop.remove();
       }, 3000);
-    }, 300); // Drop every 300ms
+    }, 300); 
 
     return () => clearInterval(interval);
   }, []);

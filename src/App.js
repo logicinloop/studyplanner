@@ -1,4 +1,4 @@
-// src/App.js
+
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Planner from "./pages/Planner";
 import Assignments from "./pages/Assignments";
-import Pomodoro from "./pages/Pomodoro"; // Capital "P" for consistency
+import Pomodoro from "./pages/Pomodoro"; 
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

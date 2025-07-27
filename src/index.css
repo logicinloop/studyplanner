@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+  }
+
+  .animate-fall {
+    animation: fall 1s linear forwards;
+  }
+}

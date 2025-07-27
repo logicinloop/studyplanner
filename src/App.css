@@ -1,0 +1,192 @@
+.pomodoro-container {
+  background: #f3e8ff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #5c4b8a;
+}
+
+.timer-box {
+  background: #e6d6ff;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(140, 82, 255, 0.3);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.time-inputs input {
+  width: 3rem;
+  padding: 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #b89eff;
+  background: #fdf8ff;
+  color: #5c4b8a;
+}
+
+.buttons button {
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.start-btn {
+  background-color: #a167e6;
+}
+
+.reset-btn {
+  background-color: #7f54b3;
+}
+
+.bucket-area {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+}
+
+.bucket {
+  width: 100%;
+  height: 100%;
+  background: #ddd0f7;
+  border: 5px solid #7c63a4;
+  border-radius: 0 0 2rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.water {
+  background-color: #c3a9f7;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: height 1s;
+}
+
+.drop {
+  position: absolute;
+  top: -10px;
+  width: 8px;
+  height: 15px;
+  background: #9d72ff;
+  border-radius: 50%;
+  animation: fall 1.5s infinite ease-in;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(220px);
+    opacity: 0;
+  }
+}
+
+
+.animate-raindrop {
+  animation: raindrop 1.2s linear infinite;
+}
+
+/* CONTAINER */
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  background-color: #f0f4f8;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* TIMER CONTROLS */
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.duration-input {
+  padding: 0.5rem;
+  width: 80px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.start-button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* BUCKET SECTION */
+.bucket-wrapper {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.pipe {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 10px 10px 0 0;
+  z-index: 10;
+}
+
+/* RAINDROPS */
+.raindrop {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 10px;
+  background-color: #00aaff;
+  border-radius: 50%;
+}
+
+/* BUCKET */
+.bucket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.bucket-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00aaff;
+  transition: height 0.5s ease-in-out;
+}
+

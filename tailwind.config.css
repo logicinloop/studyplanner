@@ -1,0 +1,28 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = 
+{
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    darkMode: 'class',
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  @keyframes fall {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 200px);
+      opacity: 0.7;
+    }
+  }
+  
+  .animate-fall {
+    animation: fall 2s linear forwards;
+  }
+  

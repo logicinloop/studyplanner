@@ -1,0 +1,83 @@
+.pomodoro-container {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f3e8ff;
+    color: #5c2e91;
+    min-height: 100vh;
+  }
+  
+  .controls input,
+  .controls button {
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .controls input {
+    width: 100px;
+  }
+  
+  .controls button {
+    background-color: #d3bdf0;
+    color: #4b0082;
+    cursor: pointer;
+  }
+  
+  .timer {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .drop-container {
+    position: relative;
+    height: 300px;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+  }
+  
+  .raindrop {
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 14px;
+    background: #8e44ad;
+    border-radius: 50%;
+    animation: drop 2s linear forwards;
+  }
+  
+  @keyframes drop {
+    0% {
+      top: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 280px;
+      opacity: 0.1;
+    }
+  }
+  
+  .bucket {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 60px;
+    background: #d8b4fe;
+    border: 4px solid #5c2e91;
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+  }
+  
+  .fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8e44ad;
+    transition: height 0.3s ease;
+  }
+  
